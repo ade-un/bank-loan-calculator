@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Firefly Animation Canvas -->
+    <canvas id="firefly-canvas"></canvas>
+
+    <div class="container">
+        <div class="header">
+            <h1>Loan Calculator</h1>
+            <p>Calculate your loan repayment with duration and total amount.</p>
+        </div>
+        <div class="form-group">
+            <label for="loan-amount">Loan Amount (₦):</label>
+            <input type="number" id="loan-amount" placeholder="Enter amount" required>
+        </div>
+        <div class="form-group">
+            <label for="interest-rate">Interest Rate (%):</label>
+            <input type="number" id="interest-rate" placeholder="Enter interest rate" required>
+        </div>
+        <div class="form-group">
+            <label for="loan-tenure">Loan Tenure (Years):</label>
+            <input type="number" id="loan-tenure" placeholder="Enter tenure in years" required>
+        </div>
+        <button id="calculate-btn" class="btn animate-btn">Calculate</button>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="firefly.js"></script> <!-- Add firefly animation script -->
+</body>
+</html>

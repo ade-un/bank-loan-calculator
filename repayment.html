@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repayment Details</title>
+    <link rel="stylesheet" href="repayment-style.css">  <!-- Link to repayment-specific CSS -->
+</head>
+<body>
+    <canvas id="fireflyCanvas"></canvas> <!-- Canvas for firefly animation -->
+    
+    <div class="container">
+        <h1>Repayment Breakdown</h1>
+        
+        <!-- Table Wrapper for proper centering -->
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th>Monthly Payment</th>
+                    <td id="monthly-payment">₦...</td>
+                </tr>
+                <tr>
+                    <th>Total Payment (over loan tenure)</th>
+                    <td id="total-payment">₦...</td>
+                </tr>
+                <tr>
+                    <th>Loan Tenure</th>
+                    <td id="loan-tenure">... years</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Back button to go to the previous page -->
+        <button id="back-btn" onclick="goBack()">Back to Loan Calculator</button>
+    </div>
+
+    <script src="repayment.js"></script> <!-- Ensure this script is included -->
+</body>
+</html>

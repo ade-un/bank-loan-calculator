@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;  /* Full viewport height */
+    background: url('bg.png.jpg') no-repeat center center fixed;  /* Custom background image */
+    background-size: cover;  /* Ensure the image covers the entire screen */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;  /* Vertically center */
+    position: relative;
+}.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.clouds {
+    width: 100%;
+    height: 100%;
+    background: url('clouds.png') repeat-x center center;
+    background-size: cover;
+    animation: moveClouds 30s linear infinite;  /* Adjusted speed for smoother clouds */
+}
+
+@keyframes moveClouds {
+    from { background-position: 0; }
+    to { background-position: 2000px; }
+}
+.container {
+    background: rgba(255, 255, 255, 0.9);  /* Semi-transparent background */
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1;  /* Ensures the content is on top */
+}.header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #66a6ff;
+}
+
+.btn {
+    width: 100%;
+    padding: 20px;  /* Increased padding for larger button */
+    background-color: #66a6ff;
+    color: white;
+    font-size: 1.5em;  /* Larger font size */
+    border: none;
+    border-radius: 12px;  /* Rounded edges */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);  /* Bigger hover effect */
+    background-color: #89f7fe;
+}
+/* For repayment.html table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff;
+}
+/* Firefly canvas styling */
+#firefly-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  /* Ensures it's behind all other content */
+}
+
+/* General page styles */
+.container {
+    background: rgba(255, 255, 255, 0.9);  /* Slight transparency to see fireflies */
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Button styles and other styles remain as defined previously */
+#calculate-btn {
+    font-size: 1.2rem;  /* Larger font size */
+    padding: 15px 30px;  /* Increase padding */
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#calculate-btn:hover {
+    background-color: #0056b3;
+}

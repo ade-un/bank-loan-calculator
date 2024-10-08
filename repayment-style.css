@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;  /* Full viewport height */
+    background: url('bg.png.jpg') no-repeat center center fixed;  /* Custom background image */
+    background-size: cover;  /* Ensure the image covers the entire screen */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;  /* Vertically center */
+    position: relative;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);  /* Semi-transparent background */
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Wrapper around the table to handle centering */
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+table {
+    width: 100%;  /* Set table width to 100% inside the container */
+    max-width: 400px;  /* Optional: Set a max width */
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.2em;
+    text-align: left;  /* Ensure left-align for content */
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff;
+}
+
+/* Back button styles */
+#back-btn {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+#back-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Firefly canvas styling */
+#fireflyCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  /* Ensures it's behind all other content */
+}
